@@ -1,0 +1,16 @@
+title: <img src=x onerror="alert('hello')"
+description: <img src=x onerror="alert('hello')"
+template:
+  repo: lessimg-srcx-onerror"alert('hello')"-template
+  name: lessimg-srcx-onerror"alert('hello')"
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
